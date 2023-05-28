@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="navigator">
-      <img src="Vector.svg" alt="Значок локации">
-      <nav><a href="#">Казань</a></nav>
+    <header>
+      <!--это прямоугольник для фона, пока разбираюсь с ним
+      <div id="rectangle"></div>-->
        <nav><a href="#">Войти</a></nav>
        <h1>ShowHUB</h1>
     </header>
@@ -19,33 +19,33 @@
         Здесь могла быть ваша реклама
       </aside>
       <section>
-        <h2>Самые свежие спектакли Казани</h2>
+        <h2 class ="first-title">Самые свежие спектакли Казани</h2>
         <div class="container">
-        <div class="card">
-        <img src="Скрипач.jpg" alt='Скрипач на крыше' width="379 px" height="220 px">
-        <p>Скрипач на крыше</p>
+        <div>
+        <img src="Скрипач.jpg"alt='Скрипач на крыше' class="img1">
+        <p class="title-1">Скрипач на крыше</p>
         <p class="underwrite">11 июля, 18:00</p>
         <p class="underwrite">Театр им. Качалова</p>
         </div>
-        <div class="card">
-        <img src="Примадонна.jpg" alt='Примадонны' width="379 px" height="220 px">
-        <p>Примадонны</p>
+        <div>
+        <img src="Примадонна.jpg"alt='Примадонны' class="img1">
+        <p class="title-1">Примадонны</p>
         <p class="underwrite">19 июля, 18:00</p>
         <p class="underwrite">Театр на Булаке</p>
         </div>
-        <div class="card">
-        <img src="Никах.jpg" alt='Безумный нихак, или похищение жениха' width="379 px" height="220 px">
-        <p>Безумный нихак, или похищение жениха</p>
+        <div>
+        <img src="Никах.jpg"alt='Безумный нихак, или похищение жениха' class="img1">
+        <p class="title-1">Безумный нихак, или похищение жениха</p>
         <p class="underwrite">21 июля, 18:00</p>
         <p class="underwrite">Театр драммы и комедии им. Тинчурина</p>
         </div>
         </div>
       </section>
       <section>
-        <h2>Все спектакли в Казани</h2>
+        <h2 class ="first-title">Все спектакли в Казани</h2>
         <div class="calendar">
           <p>Июнь</p>
-            <ul class="calendar">
+            <ul>
               <li>
                 <span>17</span>
                 <span class="weekend">Сб</span>
@@ -120,7 +120,7 @@
 
           <div>
             <p>Июль</p>
-            <ul class="calendar">
+            <ul>
               <li>
                 <span>1</span>
                 <span class="weekend">Сб</span>
@@ -167,90 +167,90 @@
               </li>
             </ul>
           </div>
-          <div class="type">
+          <div>
           <p>Жанры</p>
-          <p>Комедия</p>
-          <p>Мюзикл</p>
-          <p>Балет</p>
-          <p>Детям</p>
-          <p>Без детского</p>
+          <button type="button" class="custom-btn btn-16">Комедия</button>
+          <button type="button" class="custom-btn btn-16">Мюзикл</button>
+          <button type="button" class="custom-btn btn-16">Балет</button>
+          <button type="button" class="custom-btn btn-16">Детям</button>
+          <button type="button" class="custom-btn btn-16">Без детского</button>
           </div>
           <div class="container">
-          <div class="card">
-            <img src="Скрипач.jpg"alt='Скрипач на крыше'>
-            <p>Скрипач на крыше</p>
+          <div>
+            <img src="Скрипач.jpg"alt='Скрипач на крыше' class="img1">
+            <p class="title-1">Скрипач на крыше</p>
             <p class="underwrite">11 июля, 18:00</p>
             <p class="underwrite">Театр им. Качалова</p>
             </div>
-            <div class="card">
-        <img src="Примадонна.jpg"alt='Примадонны'>
-        <p>Примадонны</p>
+            <div>
+        <img src="Примадонна.jpg"alt='Примадонны'class="img1">
+        <p class="title-1">Примадонны</p>
         <p class="underwrite">19 июля, 18:00</p>
         <p class="underwrite">Театр на Булаке</p>
         </div>
-        <div class="card"> 
-        <img src="Никах.jpg"alt='Безумный нихак, или похищение жениха'>
+        <div>
+        <img src="Никах.jpg"alt='Безумный нихак, или похищение жениха'class="img1">
         <p>Безумный нихак, или похищение жениха</p>
         <p class="underwrite">21 июля, 18:00</p>
         <p class="underwrite">Театр драммы и комедии им. Тинчурина</p>
         </div>
       </div>
         <div class="container">
-        <div class="card">
-          <img src="Лица.jpg"alt='Лица'>
-          <p>Лица</p>
+        <div>
+          <img src="Лица.jpg"alt='Лица' class="img1">
+          <p class="title-1">Лица</p>
           <p class="underwrite">11 августа, 18:00</p>
           <p class="underwrite">Театр им. Камала</p>
           </div>
-          <div class="card">
-            <img src="Сани.jpg"alt='Не в свои сани не садись'>
-            <p>Не в свои сани не садись</p>
+          <div>
+            <img src="Сани.jpg"alt='Не в свои сани не садись' class="img1">
+            <p class="title-1">Не в свои сани не садись</p>
             <p class="underwrite">21 октября, 19:00</p>
             <p class="underwrite">Уникс</p>
             </div>
-            <div class="card">
-              <img src="Boys.jpg"alt='Golden Boys'>
-              <p>Golden Boys</p>
+            <div>
+              <img src="Boys.jpg"alt='Golden Boys' class="img1">
+              <p class="title-1">Golden Boys</p>
               <p class="underwrite">21 августа, 19:00</p>
               <p class="underwrite">Театр на Булаке</p>
               </div>
               </div>
               <div class="container">
-              <div class="card">
-                <img src="img"alt='Здрастьте, я ваша тетя'>
-                <p>Здрастьте, я ваша тётя!</p>
+              <div>
+                <img src="img"alt='Здрастьте, я ваша тетя' class="img1">
+                <p class="title-1">Здрастьте, я ваша тётя!</p>
                 <p class="underwrite">20 августа, 18:00</p>
                 <p class="underwrite">Театр на Булаке</p>
                 </div>
-              <div class="card">
-                <img src="img"alt='Про Федота - стрельца, удалого молодца'>
-                <p>Про Федота - стрельца, удалого молодца</p>
+              <div>
+                <img src="img"alt='Про Федота - стрельца, удалого молодца' class="img1">
+                <p class="title-1">Про Федота - стрельца, удалого молодца</p>
                 <p class="underwrite">27 августа, 19:00</p>
                 <p class="underwrite">Театр на Булаке</p>
                 </div>
-              <div class="card">
-                <img src="img"alt='Роковые яйца'>
-                <p>Роковые яйца</p>
+              <div>
+                <img src="img"alt='Роковые яйца'class="img1">
+                <p class="title-1">Роковые яйца</p>
                 <p class="underwrite">16 июня, 18:00</p>
                 <p class="underwrite">Театр им. Качалова</p>
                 </div>
                 </div>
                 <div class="container">
-              <div class="card">
+              <div>
                 <img src="img"alt='На закате'>
-                <p>Сагынырсызмы? / На закате</p>
+                <p class="title-1">Сагынырсызмы? / На закате</p>
                 <p class="underwrite">25 июня, 19:00</p>
                 <p class="underwrite">Театр им. Камала</p>
               </div>
-              <div class="card">
-                  <img src="img"alt='Единственный берег'>
-                  <p>Единственный берег</p>
+              <div>
+                  <img scr="img"alt='Единственный берег'>
+                  <p class="title-1">Единственный берег</p>
                   <p class="underwrite">21 июня, 19:00</p>
                   <p class="underwrite">MON</p>
               </div>   
-              <div class="card">
-                <img src="img"alt='Боинг-Боинг'>
-                <p>Боинг-Боинг</p>
+              <div>
+                <img scr="img"alt='Боинг-Боинг'>
+                <p class="title-1">Боинг-Боинг</p>
                 <p class="underwrite">23 июня, 19:00</p>
                 <p class="underwrite">Театр на Булаке</p>
             </div>   
