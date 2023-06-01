@@ -1,6 +1,3 @@
-.calendar {
-    display: flex;
-}
 
 .container {
     display: flex;
@@ -101,3 +98,58 @@ body {
   .btn-16:active {
     top: 2px;
   }
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar p {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.calendar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  /* Добавляем отступы для цифр внутри кругов */
+  padding-top: 4px;
+  box-sizing: border-box;
+  /* Стили ссылки */
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.calendar span {
+  font-size: 14px;
+  /* Центрируем цифры внутри кругов */
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+}
+
+.calendar .weekend {
+  color: red;
+}
