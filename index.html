@@ -23,15 +23,15 @@
         <div class="container">
         <div>
         <img src="Скрипач.jpg"alt='Скрипач на крыше' class="img1">
-        <p class="title-1">Скрипач на крыше</p>
+        <p class="title-1"><?=$title?></p>
         <p class="underwrite">11 июля, 18:00</p>
         <p class="underwrite">Театр им. Качалова</p>
         </div>
         <div>
         <img src="Примадонна.jpg"alt='Примадонны' class="img1">
-        <p class="title-1">Примадонны</p>
-        <p class="underwrite">19 июля, 18:00</p>
-        <p class="underwrite">Театр на Булаке</p>
+        echo "<p class='title-1'>" . $title . "</p>";
+        echo "<p class='date'>" . $datetime . "</p>";
+        echo "<p class='where'>" . $address . "</p>";
         </div>
         <div>
         <img src="Никах.jpg"alt='Безумный нихак, или похищение жениха' class="img1">
